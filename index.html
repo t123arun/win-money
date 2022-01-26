@@ -29,10 +29,11 @@
               </div>
               <div class="col-md-6">
                   <p><i class="bi bi-stopwatch"></i> Count Down</p>
-                  <p>0 1 : 4 0</p>
+                  <p id="time"></p>
               </div>
           </div>
       </div>
+      <section id="class-disable">
       <div class="container-fluid three-btn">
           <div class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Join Green</div>
           <div class="btn btn-voilet" data-toggle="modal" data-target="#exampleModal">Join Voilet</div>
@@ -52,6 +53,7 @@
               <div class="col-md-2 mr-4 btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">9</div>
           </div>
       </div>
+    </section>
       <div class="container emerd">
         <i class="bi bi-trophy"></i>
         <p>Emerd Record</p>
@@ -112,28 +114,28 @@
               <p>Contract Money</p>
               <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                 <div class="btn-group mr-2" role="group" aria-label="First group">
-                  <button type="button" class="btn btn-secondary">10</button>
+                  <button type="button" class="btn btn-secondary" id="ten">10</button>
                  
                 </div>
                 <div class="btn-group mr-2" role="group" aria-label="Second group">
-                  <button type="button" class="btn btn-secondary">100</button>
+                  <button type="button" class="btn btn-secondary" id="hundred">100</button>
                  
                 </div>
                 <div class="btn-group mr-2" role="group" aria-label="Third group">
-                  <button type="button" class="btn btn-secondary">1000</button>
+                  <button type="button" class="btn btn-secondary" id="thousand">1000</button>
                 </div>
                 <div class="btn-group" role="group" aria-label="Fourth group">
-                    <button type="button" class="btn btn-secondary">10000</button>
+                    <button type="button" class="btn btn-secondary" id="tenThousand">10000</button>
                   </div>
               </div>
               <div class="container-fluid">
                   <div class="row">
-                      <div class="col-sm-2 mr-4 btn btn-outline-dark">-</div>
-                      <div class="col-sm-2 mr-4 btn btn-outline-dark">1</div>
-                      <div class="col-sm-2 mr-4 btn btn-outline-dark">+</div>
+                      <div class="col-sm-2 mr-4 btn btn-outline-dark" id="dec">-</div>
+                      <div class="col-sm-2 mr-4 btn btn-outline-dark" id="num"></div>
+                      <div class="col-sm-2 mr-4 btn btn-outline-dark" id="inc">+</div>
                   </div>
               </div>
-              <p>Total contract money is 10</p>
+              <p>Total contract money is <span id="sum"></span></p>
               <input type="checkbox" id="check">
               <label for="check">I agree <a href="/" class="presale">PRESALE RULE</a></label>
             </div>
@@ -144,8 +146,14 @@
           </div>
         </div>
       </div>
+      <!-- <script>
+        $(document).ready(function() {
+    $('.class-disable *').prop('disabled', true);
+});
+      </script> -->
     <!-- Optional JavaScript; choose one of the two! -->
-
+     <script src="main.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
