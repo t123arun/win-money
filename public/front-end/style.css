@@ -1,0 +1,50 @@
+:root{
+    --primary:#0ef6cc;
+    --black-font:#1B2223;
+    --btn-prime:#3a4f50;
+    --btn-red:#F65151;
+    --btn-voilet:#8e43ed;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    color: var(--black-font);
+}
+.balance_display{
+    background-color: var(--primary);
+    padding: 10px 20px;
+    color:var(--black-font) ;
+}
+.btn-primary{
+    background-color: var(--btn-prime);
+}
+.emerd{
+    text-align: center;
+    border-bottom: 1px solid var(--primary);
+}
+.btn-red{
+    background-color: var(--btn-red);
+    color: white;
+}
+.btn-red:hover{
+    background-color: red;
+    color: white;
+}
+.btn-voilet{
+    background-color: var(--btn-voilet);
+    color: white;
+}
+.btn-voilet:hover{
+    background-color: rgb(55, 10, 55);
+    color: white;
+}
+a.presale{
+    color: var(--primary);
+}
+.class-disable{
+
+}
+
